@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>GHM Post Master</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div id="container">
+    <div class="wrapper">
+      <form class="form-wrapper">
+        <fieldset class="section is-active">
+        <!--2adpro logo-->
+        <img src="images/1.png" width="100" height="45" alt="2adpro" align="left">
+        <!--ghm logo-->
+        <img src="images/2.png" width="100" height="45" alt="ghm" align="right">
+        <br><br><hr><br><h4>GHM Post Master</h4>
+        
+        <!-- Message Type Starts -->
+    	<h5><br></h5>
+        <button class="link" name="message" type="reset" id="Upload-Message">Click Here for Upload Message</button>
+        <button class="link" name="billing" type="reset" id="Billing-Exception">Click Here to Add Billing Exception</button>
+        </fieldset>
+        
+        <!------------------------------------------------------------------------>    
+        <!--------------------- THIS IS POSTING MESSAGES SECTION -----------------> 
+        <!------------------------------------------------------------------------>
+        
+        <fieldset class="section">
+        <!--2adpro logo-->
+        <img src="images/1.png" width="100" height="45" alt="2adpro" align="left">
+        <!--ghm logo-->
+        <img src="images/2.png" width="100" height="45" alt="ghm" align="right">
+        <br><br><hr><br></br>
+        <input placeholder="Name" id="Employee_Name" name='Employee_Name' type="text" tabindex="1" required autofocus>
+        <input placeholder="Emp. ID" id="Employee_ID" name='Employee_ID' type="text" tabindex="1" required autofocus>
+        <input placeholder="Job / Tracking No."  name='Employee_Job' id="Employee_Job" type="text" tabindex="1" required autofocus>
+        <!-- Basic Info Ends -->
+        <!-- Message Type Starts -->
+        <h5>Message Category - Choose the relevant option</h5><p class="ra">
+        <input type="radio" id="Message_Category" name="Message_Category" value="Missing elements (Child ads/ Images/ Copy / Logo / Artwork)" checked> Missing elements (Child ads/ Images/ Copy / Logo / Artwork)<br>
+      	<input type="radio" id="Message_Category" name="Message_Category" value="Unclear copy(Scanned / Handwritten)" checked> Unclear copy(Scanned / Handwritten)<br>
+      	<input type="radio" id="Message_Category" name="Message_Category" value="Unclear Instructions - Judgement Taken" checked> Unclear Instructions - Judgement Taken<br>
+      	<input type="radio" id="Message_Category" name="Message_Category" value="Missing links" checked> Missing links<br>
+      	<input type="radio" id="Message_Category" name="Message_Category" value="New dimension (Auction/ Legal ads)" checked> New dimension (Auction/ Legal ads)<br>
+      	<input type="radio" id="Message_Category" name="Message_Category" value="Outside SOP Requirement" checked> Outside SOP Requirement<br>
+      	<input type="radio" id="Message_Category" name="Message_Category" value="Others" checked> Others<br> </p>
+        
+    	<!-- Message Type Ends -->
+    	<!-- Message Body Starts -->
+    	<textarea name='Message' id="Message" placeholder="Your Message...." tabindex="5" required></textarea>
+        <!-- Message Body Ends -->
+        <!-- Action Area Starts -->
+        
+        <button class="button" name="submit" type="submit" value="submit" id="message-submit" data-submit="...Sending">Submit</button>
+        <button class="button" name="reset" type="reset" id="message-reset" data-submit="...Sending">Reset</button>
+        <button class="link" name="back" type="reset" id="message-reset" data-submit="...Sending">Back to Home Window</button>
+ 
+        </fieldset>
+		
+        <!------------------------------------------------------------------------>    
+        <!--------------------- THIS IS PAGE BILLING SECTION ---------------------> 
+        <!------------------------------------------------------------------------>
+               
+        <fieldset class="section">
+        <!--2adpro logo-->
+        <img src="images/1.png" width="100" height="45" alt="2adpro" align="left">
+        <!--ghm logo-->
+        <img src="images/2.png" width="100" height="45" alt="ghm" align="right">
+        <br><br><hr><br></br>
+        <input placeholder="Name" id="Employee_Name" name='Employee_Name' type="text" tabindex="1" required autofocus>
+        <input placeholder="Emp. ID" id="Employee_ID" name='Employee_ID' type="text" tabindex="1" required autofocus>
+        <input placeholder="Job / Tracking No."  name='Employee_Job' id="Employee_Job" type="text" tabindex="1" required autofocus>     
+	        
+        <!-- Basic Info Ends -->
+		<!-- Exception Category Starts -->
+		<h5>Choose Exception Category & Order Cycle*</h5>
+		<p class="ra">
+		<select name="Exception_Category">
+            <option value="Select Category">--Select Category--</option>
+            <option value="No Of Pages">No Of Pages</option>
+            <option value="Size Change">Size Change</option>
+            <option value="Color Change">Color Change</option>
+            <option value="Change to AD3 in Revision">Change to AD3 in Revision</option>
+            <option value="New Layout">New Layout</option>
+            <option value="New Content">New Content</option>
+         </select>
+
+      	<select name="Order_Cycle">
+            <option value="Select Order Cycle">--Select Order Cycle--</option>
+            <option value="R0 - New Order">R0 - New Order</option>
+            <option value="R1">R1</option>
+            <option value="R2">R2</option>
+            <option value="R3">R3</option>
+            <option value="R4">R4</option>
+            <option value="R5">R5</option>
+            <option value="R6">R6</option>
+            <option value="R7">R7</option>
+            <option value="R8">R8</option>
+            <option value="R9">R9</option>
+            <option value="R10">R10</option>
+            <option value="R10 +">R10 +</option>
+      </select>
+      </p>
+    
+       <!-- Message Type Ends -->
+       <!-- Message Body Starts -->
+       <textarea name='Message' id="Message" placeholder="Your Message...." tabindex="5" required></textarea>
+    
+       <!-- Message Body Ends -->    
+       <!-- Action Area Starts -->
+       <button class="button" name="submit" type="submit" id="message-submit" data-submit="...Sending">Submit</button>
+       <button class="button" name="reset" type="reset" id="message-reset" data-submit="...Sending">Reset</button>
+       <button class="link" name="back" type="reset" id="message-reset" data-submit="...Sending">Back to Home Window</button>
+       </fieldset>
+              
+       <!------------------------------------------------------------------------>    
+       <!--------------------- THIS IS PAGE THANKS YOU SECTION ------------------> 
+       <!------------------------------------------------------------------------>
+       
+        <fieldset class="section">
+        <!--2adpro logo-->
+        <img src="images/1.png" width="100" height="45" alt="2adpro" align="left">
+        <!--ghm logo-->
+        <img src="images/2.png" width="100" height="45" alt="ghm" align="right">
+        <br><br><hr><br><h4>Thank You for posting your message.<br>Waiting for action from CSE Desk...</h4><br>
+          <button class="link" name="back" id="message-resubmit" data-submit="...Sending">Back to Home Window</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<!--<script src="js/index.js"></script>-->
+<script src='js/google-sheet.js'></script>
+</body>
+</html>
